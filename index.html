@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XML - JS</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			var xhttp;
+			xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			        parseXMLString(this);
+			    }
+			};
+			xhttp.open("GET", "employees.xml", true);
+			xhttp.send();			
+			function parseXMLString( params ) {
+				var x, xmlDoc, xml;
+				xmlDoc = params.responseXML;
+				x = xmlDoc.getElementsByTagName( 'firstname' );
+				for ( var i = 0; i < x.length; i++ ) {
+					console.log( x[i].childNodes[0].nodeValue );
+				}
+			}
+		} );
+	</script>
+</head>
+<body>
+</body>
+</html>

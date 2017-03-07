@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+    <employee category="softwaredevelopment">
+        <firstname>Rafon</firstname>
+        <lastname>Amista</lastname>
+        <position>Senior Web Developer</position>
+    </employee>
+    <employee category="softwaredevelopment">
+        <firstname>Pierce Philipp</firstname>
+        <lastname>Amista</lastname>
+        <position>Junior Web Developer</position>
+    </employee> 
+    <employee category="design">
+        <firstname>Shiela Angela</firstname>
+        <lastname>Amista</lastname>
+        <position>Web Designer</position>
+    </employee>
+    <employee category="design">
+        <firstname>Yoona Angela</firstname>
+        <lastname>Amista</lastname>
+        <position>Web Designer</position>
+    </employee>               
+</employees>
